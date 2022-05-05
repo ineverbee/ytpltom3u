@@ -79,7 +79,7 @@ def chose_pl(playlists):
         print(f"{i+1}. \033[1m{item['snippet']['title']}\033[0m\n{item['snippet']['description']}")
     while True:
         num = input("Enter number of required playlist: ")
-        if num.isdigit() and 1 <= int(num) <= len(playlists):
+        if num.isdigit() and 1 <= int(num) <= len(playlists["items"]):
             return playlists["items"][int(num) - 1]["id"]
         print("Chose one of the options")
 
