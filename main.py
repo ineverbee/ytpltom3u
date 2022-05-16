@@ -3,6 +3,7 @@ import json
 import os
 import googleapiclient.discovery
 
+from art import tprint
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -98,6 +99,7 @@ def retrieve_pl_items(pl):
     return request.execute()["items"]
 
 def main():
+    tprint("YT PL > to > M3U")
     s, is_query = get_query_or_id()
     if is_query:
         s = search_for_channel(s)

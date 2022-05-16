@@ -8,6 +8,7 @@
 ```
 pip install -r requirements.txt
 ```
+Также для запуска вам будет необходим API ключ, который можно получить на сайте [GCP](https://cloud.google.com/), подробная инструкция как получить ключ - [How To Get Youtube API Key](https://blog.hubspot.com/website/how-to-get-youtube-api-key). После получения ключа просто поместите его в файл `.env` вместо `YOUR_API_KEY`.
 
 ### Запуск скрипта
 
